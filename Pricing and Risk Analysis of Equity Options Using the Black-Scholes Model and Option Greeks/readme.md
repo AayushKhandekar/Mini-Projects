@@ -2,8 +2,6 @@
 
 This project explores a delta hedging strategy using European call options on NVIDIA (NVDA), utilizing the Black-Scholes Model (BSM) and Greek sensitivities. We simulate and backtest a dynamic delta-hedged portfolio and compare its risk profile to an unhedged position.
 
----
-
 ## 📌 Objectives
 
 - Retrieve NVDA options and historical stock data using `yfinance`.
@@ -15,8 +13,6 @@ This project explores a delta hedging strategy using European call options on NV
 - Evaluate performance: portfolio value, PnL, risk metrics (Std Dev, VaR, Max Drawdown).
 - Visualize results with detailed plots and interpretation.
 
----
-
 ## 🛠️ Technologies Used
 
 - Python 🐍
@@ -24,8 +20,6 @@ This project explores a delta hedging strategy using European call options on NV
 - `matplotlib`, `seaborn`
 - Black-Scholes Model
 - Option Greeks Formulas
-
----
 
 ## 📈 Option Greeks Visualization
 
@@ -35,8 +29,6 @@ Visualizing how Delta, Gamma, Theta, and Vega change with respect to strike pric
 - **Gamma**: Bell-shaped, peaking near ATM  
 - **Theta**: Negative, call options decay faster than puts  
 - **Vega**: Highest for ATM options  
-
----
 
 ## 🔧 Strategy Setup
 
@@ -50,13 +42,9 @@ Key Variables:
 - `Call Premium`: Collected as upfront cash  
 - `Rebalancing`: Daily update of delta and shares  
 
----
-
 ## Greeks
 
 ![Greeks](Images/option-greeks-vs-strike-price.png)
-
----
 
 ## ⏱️ Backtesting Results
 
@@ -66,23 +54,17 @@ Backtested over a 30-day window using rolling volatility estimates.
 
 ![Portfolio Value Over Time](Images/portfolio-values.png)
 
----
-
 ### 📉 Drawdown Comparison
 
 The delta-hedged portfolio experiences temporary losses due to path-dependent risks (gamma), but overall reduces directional risk.
 
 ![Drawdown Comparison](images/drawdown-comparison.png)
 
----
-
 ### 📊 Return Distribution
 
 Hedged returns have **lower variance** and **higher kurtosis** compared to unhedged.
 
 ![Return Distribution](images/returns-distribution.png)
-
----
 
 ### 📦 Boxplot of Daily Returns
 
