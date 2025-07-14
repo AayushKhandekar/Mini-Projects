@@ -27,16 +27,9 @@ This project explores a delta hedging strategy using European call options on NV
 
 ---
 
-## 📦 Project Structure
-
-
----
-
 ## 📈 Option Greeks Visualization
 
 Visualizing how Delta, Gamma, Theta, and Vega change with respect to strike prices for both call and put options:
-
-![Greeks vs Strike](images/greeks_vs_strike.png)
 
 - **Delta**: ~0.5 for ATM calls, ~-0.5 for ATM puts  
 - **Gamma**: Bell-shaped, peaking near ATM  
